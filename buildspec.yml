@@ -13,7 +13,7 @@ phases:
       - echo "Logging in to Docker Hub..."
       - docker login -u 13riddhi -p $DOCKER_PASSWORD
       - echo "Building Docker image..."
-      - docker build -t 13riddhi/promptweb
+      - docker build -t 13riddhi/promptweb .
   build:
     commands:
       - echo "Pushing Docker image to Docker Hub..."
